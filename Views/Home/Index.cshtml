@@ -1,4 +1,5 @@
-﻿@{
+﻿@model _2021_06_18_partialViewExperimente.Models.Document
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -22,6 +23,18 @@
 <br />
 
 <p>Hier soll die Document View hin</p>
+<div>
+    @*@{Html.RenderPartial("Create", Model)}*@
+    @*<partial name="model.Index" />*@
+    @*@Html.Partial("~/Views/AnotherFolder/Messages.cshtml", ViewData.Model.Successes)*@
+    @*@Html.Partial("~/Views/Documents/Index.cshtml")*@
+    @*<partial name="~/Views/Documents/Index.cshtml" />*@
+    @*<partial name="~/Views/Documents/Create.cshtml" />*@
+    <partial name="_PartialViewDocument" />
+
+
+</div>
+
 
 
 
