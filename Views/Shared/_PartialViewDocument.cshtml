@@ -6,7 +6,8 @@
 <h4>Document</h4>
 
 <hr />
-@*
+@*      Das hier war automatisch generiert aber laueft so nicht
+        ********************************************************
         <div class="row">
             <div class="col-md-4">
                 <form method="post">
@@ -27,7 +28,11 @@
         <a asp-page="Index">Back to List</a>
     </div>
 *@
-<h1>Index</h1>
+
+@*Das hier ist copie paste aus der Document.Index
+************************************************@
+
+<h1>Document.Index</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -42,20 +47,20 @@
         </tr>
     </thead>
     @*<tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-                </td>
-            </tr>
-        }
-    </tbody>*@
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>*@
 </table>
 
 @section Scripts {
