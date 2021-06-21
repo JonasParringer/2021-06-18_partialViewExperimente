@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace _2021_06_18_partialViewExperimente.Models
 {
-    public class Document : IEnumerable<>
+    public class Document //: IEnumerable<Task>
     {
         public int ID { get; set; }
         public string Name { get; set; }
